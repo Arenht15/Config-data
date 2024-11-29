@@ -26,18 +26,18 @@ spring:
           predicates:
             - Path=/prestabanco/user/**
         - id: credit-services
-          uri: lb://ms-products
+          uri: lb://microServicio-credito
           predicates:
-            - Path=/products/**
-        - id: evalacion-services
-          uri:
+            - Path=/prestabanco/credito/**
+        - id: evaluacion-services
+          uri: lb://microServicio-Evaluacion
           predicates:
-            - Path=/
+            - Path=/prestabanco/evaluacion/**
         - id: seguimiento-services
-          uri:
+          uri: lb://microServicio-seguimiento
           predicates:
-            - Path=/
+            - Path=/prestabanco/seguimiento/**
         - id: solicitud-services
-          uri:
+          uri: lb://microServicio-solicitud
           predicates:
-            - Path=/
+            - Path=/prestabanco/solicitud/**
