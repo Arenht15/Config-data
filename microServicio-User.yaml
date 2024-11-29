@@ -3,8 +3,8 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/bdEjemplo
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
+    username: postgrest
+    password: 1234
 eureka:
   instance:
     preferIpAddress: true
