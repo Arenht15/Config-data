@@ -41,7 +41,7 @@ spring:
           uri: lb://microServicio-solicitud
           predicates:
             - Path=/prestabanco/solicitud/**
-        - id: solicitud-services-sc
+        - id: microServicio-solicitud
           uri: lb://microServicio-solicitud
           predicates:
             - Path=/prestabanco/sc/**
