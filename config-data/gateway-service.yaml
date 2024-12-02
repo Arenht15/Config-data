@@ -19,7 +19,7 @@ spring:
       globalcors:
         cors-configurations:
           '[/**]':
-            allowedOrigins: "*"
+            allowedOrigins: '*'
             allowedMethods: "*"
             allowedHeaders: "*"
       routes:
@@ -42,4 +42,4 @@ spring:
         - id: solicitud-services
           uri: lb://microServicio-solicitud
           predicates:
-            - Path=/prestabanco/solicitud/**
+            - Path=/prestabanco/(solicitud|sc)/**
