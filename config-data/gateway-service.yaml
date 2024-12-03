@@ -19,10 +19,17 @@ spring:
       globalcors:
         cors-configurations:
           '[/**]':
-            allowed-origins: '*'
-            allowed-methods: "*"
-            allowed-headers: "*"
-            allow-credentials: true
+            allowedOrigins:
+              - "http://localhost:5173" # Cambia esto al origen de tu frontend
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            exposedHeaders: "*"
+            allowCredentials: true
       routes:
         - id: user-services
           uri: lb://microServicio-User
