@@ -5,6 +5,9 @@ spring:
     url: jdbc:postgresql://localhost:5432/bdEjemplo2
     username: postgres
     password: 12345
+  jpa:
+    hibernate:
+      ddl-auto: update
 eureka:
   instance:
     preferIpAddress: true
