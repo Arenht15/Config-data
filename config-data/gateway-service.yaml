@@ -20,7 +20,7 @@ spring:
         cors-configurations:
           '[/**]':
             allowedOrigins:
-              - "*"
+              - "172.26.166.41:30001"
             allowedMethods:
               - GET
               - POST
