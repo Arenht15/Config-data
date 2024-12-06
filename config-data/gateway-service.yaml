@@ -16,20 +16,13 @@ spring:
           enabled: true
         default-filters:
           - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
-      globalcors:
-        cors-configurations:
-          '[/**]':
-            allowedOrigins:
-              - "172.26.166.41:30001"
-            allowedMethods:
-              - GET
-              - POST
-              - PUT
-              - DELETE
-              - OPTIONS
-            allowedHeaders: "*"
-            exposedHeaders: "*"
-            allowCredentials: true
+        globalcors:
+          cors-configurations:
+            '[/**]':
+              allowedOrigins: '*'
+              allowedMethods: "*"
+              allowedHeaders: "*"
+              allowCredentials: true
       routes:
         - id: user-services
           uri: lb://microServicio-User
