@@ -5,9 +5,13 @@ spring:
     url: jdbc:postgresql://microservicio-evaluacion-db-service:5434/microServicio-evaluacion-bd
     username: postgres
     password: 12345
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: update
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
 eureka:
   instance:
     preferIpAddress: true
