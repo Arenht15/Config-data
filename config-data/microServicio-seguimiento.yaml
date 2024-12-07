@@ -2,7 +2,7 @@ server:
   port: ${PORT:${SERVER_PORT:0}}
 spring:
   datasource:
-    url: jdbc:postgresql://microservicio-seguimiento-db-service:5432/microServicio-seguimiento-db
+    url: jdbc:postgresql://microservicio-seguimiento-db-service:5435/microServicio-seguimiento-db
     username: postgres
     password: 12345
   jpa:
@@ -15,4 +15,4 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka-service-service:8761/eureka/
