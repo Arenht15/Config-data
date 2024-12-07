@@ -2,7 +2,7 @@ server:
   port: ${PORT:${SERVER_PORT:0}}
 spring:
   datasource:
-    url: jdbc:postgresql://microservicio-credito-db-service:5432/microServicio-credito-bd
+    url: jdbc:postgresql://microservicio-credito-db-service:5436/microServicio-credito-bd
     username: postgres
     password: 12345
     driver-class-name: org.postgresql.Driver
