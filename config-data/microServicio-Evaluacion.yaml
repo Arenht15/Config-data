@@ -2,7 +2,7 @@ server:
   port: ${PORT:${SERVER_PORT:0}}
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5434/bdEjemplo
+    url: jdbc:postgresql://microservicio-evaluacion-db-service:5434/microServicio-evaluacion-bd
     username: postgres
     password: 12345
   jpa:
