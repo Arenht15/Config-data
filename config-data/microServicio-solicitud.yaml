@@ -5,6 +5,7 @@ spring:
     url: jdbc:postgresql://microservicio-solicitud-db-service:5433/microServicio-solicitud-bd
     username: postgres
     password: 12345
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: update
